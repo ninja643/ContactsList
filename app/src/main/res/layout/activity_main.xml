@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/setAlarmButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -15,9 +15,37 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Pick a contact"
+        android:text="@string/alarm_in_a_minute"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="pickContact"/>
+        android:onClick="setAlarm"/>
+
+    <Button
+        android:id="@+id/showAlarmsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_alarms"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintTop_toBottomOf="@id/setAlarmButton"
+        android:onClick="showAlarms"
+        />
+
+    <Button
+        android:id="@+id/pickContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_a_contact"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintTop_toBottomOf="@id/showAlarmsButton"
+        android:onClick="pickContact"
+        />
 </android.support.constraint.ConstraintLayout>

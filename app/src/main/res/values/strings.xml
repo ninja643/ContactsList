@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ContactsList</string>
+    <string name="alarm_in_a_minute">Alarm in a minute</string>
+    <string name="show_alarms">Show alarms</string>
+    <string name="pick_a_contact">Pick a contact</string>
 </resources>
